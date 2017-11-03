@@ -1,12 +1,17 @@
 /* GLOBAL */
 html {
-    background-color: grey;
+    background-color: #c9c9c9;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.fl { float: left; }
+.fr { float: right; }
 
 /* TIMELINE TIME */
 .timelineTime {
+    font-size: 16pt;
     width: 100px;
-    padding: 10px;
+    padding: 5px 10px;
     background-color: white;
     border: 1px solid gray;
     margin: 10px;
@@ -16,15 +21,16 @@ html {
 /* TIMELINE ICON */
 .timelineIcon {
     padding: 10px;
-    background-color: grey;
-    width: 30px;
-    height: 30px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
     margin: 10px;
     border-radius: 100%;
 }
 
 /* TIMELINE ITEM */
 .timelineItem {
+    border-radius: 5px;
     padding: 10px;
     background-color: white;
     border: 1px solid gray;
@@ -32,20 +38,45 @@ html {
     overflow: hidden;
 }
 
+.timelineItem.red {
+    background-color: #ad1919;
+}
+
+.timelineItem.green {
+    background-color: #008a5b;
+}
+
 .timelineItem h1 {
-    
+    font-size: 20pt;
+}
+.timelineItem.red h1,
+.timelineItem.green h1 {
+    color: white;
 }
 
 .timelineItem h2 {
-    color: grey;
+    font-size: 12pt;
+    color: white;
+}
+.timelineItem h2.red {
+    color: #ad1919;
+}
+.timelineItem h2.green {
+    color: #008a5b;
 }
 
 .timelineItem p {
-
+    font-size: 14pt;
 }
 
 .timelineItem .evalution .p {
-    color: grey;
+    color: #c9c9c9;
+}
+.timelineItem .evaluation.red {
+    color: #ad1919;
+}
+.timelineItem .evaluation.green {
+    color: #008a5b;
 }
 
 .timelineItem hr {
@@ -53,5 +84,9 @@ html {
     margin-left: -25%;
 }
 
-.fl { float: left; }
-.fr { float: right; }
+.timelineItem .evaluationIcon {
+    padding: 10px;
+    width: 16px;
+    height: 16px;
+    margin: 10px;
+}

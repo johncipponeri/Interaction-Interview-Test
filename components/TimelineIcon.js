@@ -1,9 +1,11 @@
 import React from 'react';
 
-const TimelineIcon = ({ iconName }) => {
+const TimelineIcon = ({ icon }) => {
+    const iconSvg = '../assets/svgs/' + icon + '.svg';
+
     return (
         <div className='timelineIcon fl'>
-            <img src={iconName} />
+            <img src={iconSvg} />
         </div>
     );
 }

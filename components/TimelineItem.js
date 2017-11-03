@@ -7,13 +7,16 @@ const TimelineItem = ({
     subtitle,
     color,
     backgroundColor,
-    icon,
     judgementIcon,
     evaluation,
     notes,
 }) => {
+    const containerClasses = `timelineItem ${backgroundColor}`;
+    const evaluationClasses = `evaluation ${color}`;
+    const iconSvg = evaluation ? `../assets/svgs/${evaluation.icon}.svg` : '';
+
     return (
-        <div className='timelineItem'>
+        <div className={containerClasses}>
             <h1>{title}</h1>
 
             {!subtitle && (evaluation || notes) && 
@@ -21,14 +24,21 @@ const TimelineItem = ({
             }
 
             {subtitle && 
-                <h2>{subtitle}</h2>
+                <h2 className={color}>{subtitle}</h2>
             }
 
             {evaluation &&
-                <div className='evaluation'>
+                <div className={evaluationClasses}>
                     <p className='fl'>{evaluation.text}</p>
+                    {evaluation && 
+                        <div className='evaluationIcon fr'>
+                            <img src={iconSvg} />
+                        </div>
+                    }
                     {evaluation.score &&
-                        <p className='fr'>{evaluation.score}/{evaluation.maxScore}</p>
+                        <div class='evaluationScore'>
+                            <p className='fr'>{evaluation.score}/{evaluation.maxScore}</p>
+                        </div>
                     }
                 </div>
             }
