@@ -1,0 +1,42 @@
+/* TIMELINE TIME */
+.timelineTime {
+    width: 100px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 10px;
+    text-align: center;
+}
+
+/* TIMELINE ITEM */
+.timelineItem {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.timelineItem h1 {
+    
+}
+
+.timelineItem h2 {
+    color: grey;
+}
+
+.timelineItem p {
+
+}
+
+.timelineItem .evalution .p {
+    color: grey;
+}
+
+.timelineItem hr {
+    width: 150%;
+    margin-left: -25%;
+}
+
+.fl { float: left; }
+.fr { float: right; }
