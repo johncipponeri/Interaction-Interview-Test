@@ -1,3 +1,8 @@
+/* GLOBAL */
+html {
+    background-color: grey;
+}
+
 /* TIMELINE TIME */
 .timelineTime {
     width: 100px;
@@ -6,6 +11,16 @@
     border: 1px solid gray;
     margin: 10px;
     text-align: center;
+}
+
+/* TIMELINE ICON */
+.timelineIcon {
+    padding: 10px;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 100%;
 }
 
 /* TIMELINE ITEM */

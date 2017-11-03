@@ -4,7 +4,7 @@ import Style from '../style.css';
 const TimelineItem = ({
     id,
     title,
-    subTitle,
+    subtitle,
     color,
     backgroundColor,
     icon,
@@ -16,12 +16,12 @@ const TimelineItem = ({
         <div className='timelineItem'>
             <h1>{title}</h1>
 
-            {!subTitle && 
+            {!subtitle && (evaluation || notes) && 
                 <hr /> 
             }
 
-            {subTitle && 
-                <h2>{subTitle}</h2>
+            {subtitle && 
+                <h2>{subtitle}</h2>
             }
 
             {evaluation &&
