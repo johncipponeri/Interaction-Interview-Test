@@ -14,6 +14,13 @@ module.exports = options => {
                             loader: 'babel-loader',
                         }
                     ]
+                },
+                {
+                    test: /\.css$/,
+                    use: [
+                        'style-loader',
+                        'css-loader'
+                    ]
                 }
             ]
             

@@ -1,11 +1,11 @@
 import React from 'react';
-import TimelineItem from './TimelineItem';
+import TimelineRow from './TimelineRow';
 
 const Timeline = ({ timelineData }) => {
     return (
         <div className='timeline'>
-            {timelineData.map((timelineItemData, index) => (
-                <TimelineItem key={timelineItemData.id} {...timelineItemData} />
+            {timelineData.map((timelineRowData, index) => (
+                <TimelineRow key={timelineRowData.id} {...timelineRowData} />
             ))}
         </div>
     );
